@@ -10,7 +10,7 @@ const UserSchema = new Schema({
         type: String,
         required: [true, 'Username is required'],
         unique: [true, 'Username already exists'],
-        match: [/^[a-zA-Z0-9_]+$/, 'Username is invalid'],
+        match: [/^[a-zA-Z0-9_ ]+$/, 'Username is invalid'],
         minlength: [3, 'Username must be at least 3 characters'],
         maxlength: [20, 'Username must be at most 20 characters'],
     },
