@@ -1,4 +1,4 @@
-# 🤖 Promptopia
+# 🤖 Promtopia
 
 > **An open-source AI prompting tool for the modern world to discover, create, and share creative prompts.**
 
@@ -11,11 +11,11 @@
 
 ## 🎨 Screenshots & Preview
 
-*Below are visual previews of Promptopia. Add your application screenshots in the `public/assets/screenshots` folder and reference them here.*
+_Below are visual previews of Promtopia. Add your application screenshots in the `public/assets/screenshots` folder and reference them here._
 
 <p align="center">
   <strong>🏠 Homepage Feed</strong><br>
-  <img src="public/assets/screenshots/homepage.png" alt="Promptopia Homepage Feed" width="900" style="border-radius: 8px; border: 1px solid #ddd; margin: 10px 0;"/>
+  <img src="public/assets/screenshots/homepage.png" alt="Promtopia Homepage Feed" width="900" style="border-radius: 8px; border: 1px solid #ddd; margin: 10px 0;"/>
 </p>
 
 <table width="100%">
@@ -38,7 +38,7 @@
 - **🔍 Live Search & Filter**: Real-time searching of prompts by creators, specific tags, or keywords.
 - **🏷️ Interactive Tags**: Click on tags on any prompt card to instantly filter the feed of related topics.
 - **🔐 Google OAuth Authentication**: Secure user login using Google credentials via NextAuth.
-- **📝 CRUD Operations**: 
+- **📝 CRUD Operations**:
   - **Create**: Write and tag prompts with ease.
   - **Read**: View shared prompts from creators around the globe.
   - **Update**: Edit your prompts instantly.
@@ -65,6 +65,7 @@
 ### 📋 Prerequisites
 
 Make sure you have the following installed:
+
 - [Node.js](https://nodejs.org/) (v18.x or higher recommended)
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or a local MongoDB instance.
 - Google Developer Console account (for Google OAuth API keys).
@@ -72,18 +73,21 @@ Make sure you have the following installed:
 ### ⚙️ Installation & Setup
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/your-username/promtopia.git
    cd promtopia
    ```
 
 2. **Install Dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Configure Environment Variables**
    Create a `.env` file in the root directory (or rename `.env.example`) and fill in your credentials:
+
    ```env
    GOOGLE_ID=your_google_client_id
    GOOGLE_CLIENT_SECRET=your_google_client_secret
@@ -92,14 +96,16 @@ Make sure you have the following installed:
    NEXTAUTH_URL_INTERNAL=http://localhost:3000
    NEXTAUTH_SECRET=your_nextauth_secret_key
    ```
+
    > **Note**: You can generate a secure `NEXTAUTH_SECRET` by running: `openssl rand -base64 32` in your terminal.
 
 4. **Run the Development Server**
+
    ```bash
    npm run dev
    ```
 
-5. **Open Promptopia**
+5. **Open Promtopia**
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
 ---
